@@ -1,6 +1,6 @@
 ## NodeJS Express Server CLI Interface
 
-* Uses NodeJS Express Server's POST method to interface with Bash CLI commands & scripts
+* Uses NodeJS Express Server's POST method to interface with Bash/PowerShell CLI commands & scripts
 
 ### Setup/Start NodeJS Express Server
 
