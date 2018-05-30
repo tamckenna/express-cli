@@ -11,7 +11,7 @@ function logger {
 }
 
 function run_commands {
-    logger "Running Bash Commands now..."
+    logger "Running PowerShell Commands now..."
     #Run Powershell Commands Here! $inputCmd is the api input
     #
 }
