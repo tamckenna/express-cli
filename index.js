@@ -8,6 +8,7 @@
 //Load Environment Variables
 'use strict';
 const env = require('dotenv').config({path: 'process.env'});
+var isWin = process.platform === "win32";
 
 //Application Configuration
 const appName = process.env.APP_NAME;
@@ -34,8 +35,14 @@ const router = express.Router();
 router.route('/' + routeString).post(function(req, res){
 
     //Run Command with input
-    console.log("Input Cmd: " + req.body.cmd);
-    var child = spawnSync('./cmdScript.sh',[req.body.cmd]);
+    console.log("Cmd: " + req.body.cmd);
+
+    //Run PowerShell Script for Windows & Bash for everything else
+    if(isWin){
+        var child = spawnSync("powershell.exe", [".\\cmdScript.ps1", req.body.cmd]);
+    }else{
+        var child = spawnSync("./cmdScript.sh", [req.body.cmd]);
+    }    
 
     //Response Message
     res.json({
