@@ -1,15 +1,15 @@
 ## NodeJS CLI Express Server Interface
 
-* Uses the nodeJS express POST web server to interface bash cli commands & scripts
+* Uses NodeJS Express Server's POST method to interface with Bash CLI commands & scripts
 
-### Start Express POST API Server
+### Setup/Start Express Server
 
 ```
 npm install
 npm start
 ```
 
-* You can send a JSON Request Object with parameters
+* Send a JSON Request Object with the cmd paramters
 
 	* Content-Type: application/json
 
