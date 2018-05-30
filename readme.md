@@ -1,8 +1,8 @@
-## NodeJS CLI Express Server Interface
+## NodeJS Express Server CLI Interface
 
 * Uses NodeJS Express Server's POST method to interface with Bash CLI commands & scripts
 
-### Setup/Start Express Server
+### Setup/Start NodeJS Express Server
 
 ```
 npm install
