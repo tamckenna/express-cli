@@ -1,5 +1,7 @@
 ## NodeJS Express Server CLI Interface
 
+* Yes, this is a hack, but sometimes it is quite useful.
+
 * Uses NodeJS Express Server's POST method to interface with Bash/PowerShell CLI commands & scripts
 
 ### Setup/Start NodeJS Express Server
